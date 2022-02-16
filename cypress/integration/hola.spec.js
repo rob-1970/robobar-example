@@ -73,4 +73,6 @@ describe('Hello Cypress', () => {
             wineButton()            .click()            .click()
             totalText()            .should("contains.text", "€6.00")
         })*/
+
+
 })
