@@ -7,12 +7,15 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'TEST #1 . . . . . . . . .'
-                sh 'yarn cy:ci'
+                nodejs('node-14.18.2'){
+                    sh 'yarn install'
+                    sh 'yarn cy:ci'
+                }
             }
             post {
                 echo 'TEST POST . . . . . . . . .'
                 always {
-                    junit 'results/test-output-*.xml'
+                    junit 'results/*.xml'
                 }
             }
         }
