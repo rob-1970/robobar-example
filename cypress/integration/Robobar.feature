@@ -1,5 +1,9 @@
 Feature: Robobar cart
 
+  // =====================================================================================================================================================
+  // AFEGIR, pas a pas, del fitxer <robobar.feature> de hello-selinide-gft/src/test/resources/com/sinensia/helloselenide/cucumber/
+  // =====================================================================================================================================================
+
   @focus
   Scenario: user add one cola
     Given user opens robobar website
