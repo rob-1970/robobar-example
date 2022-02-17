@@ -8,8 +8,6 @@ pipeline {
             steps {
                 sh 'yarn cy:ci'
             }
-
-            }
             post {
                 always {
                     npm 'results/test-output-*.xml'
