@@ -4,11 +4,19 @@ pipeline {
     // =======================================================================
     agent any
     stages {
+
+        stage('Install') {
+            steps {
+                nodejs('node-14.18.2'){
+                    sh 'yarn install'
+                }
+            }
+        }
+
         stage('Test') {
             steps {
                 echo 'TEST #1 . . . . . . . . .'
                 nodejs('node-14.18.2'){
-                    sh 'yarn install'
                     sh 'yarn cy:ci'
                 }
             }
