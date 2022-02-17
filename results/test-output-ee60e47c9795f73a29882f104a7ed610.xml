@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.9800" tests="3" failures="2">
+  <testsuite name="Root Suite" timestamp="2022-02-17T09:38:44" tests="0" file="cypress/integration/Robobar.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Robobar cart" timestamp="2022-02-17T09:38:44" tests="3" time="4.9800" failures="2">
+    <testcase name="Robobar cart user add one cola" time="4.9800" classname="user add one cola">
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks (example #1)" time="0.0000" classname="user buy several drinks (example #1)">
+      <failure message="Step implementation missing for: user checks out" type="Error"><![CDATA[Error: Step implementation missing for: user checks out
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10476:11)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9791:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks (example #2)" time="0.0000" classname="user buy several drinks (example #2)">
+      <failure message="Step implementation missing for: user checks out" type="Error"><![CDATA[Error: Step implementation missing for: user checks out
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10476:11)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9791:35)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
