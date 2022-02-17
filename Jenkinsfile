@@ -6,13 +6,13 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh './yarn cy:ci'
+                sh 'yarn cy:ci'
             }
 
             }
             post {
                 always {
-                    junit 'build/test-results/test/*.xml'
+                    npm 'results/test-output-*.xml'
                 }
             }
         }
