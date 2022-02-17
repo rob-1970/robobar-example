@@ -13,7 +13,6 @@ pipeline {
                 }
             }
             post {
-                echo 'TEST POST . . . . . . . . .'
                 always {
                     junit 'results/*.xml'
                 }
