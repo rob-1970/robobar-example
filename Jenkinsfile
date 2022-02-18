@@ -10,7 +10,7 @@ pipeline {
 
     stages {
         stage('Install') {
-            when { expression { false} }
+            //when { expression { false} }
             steps {
                 echo 'INTALLING step #1 . . . . . . . . .'
                 nodejs('node-14.18.2'){
