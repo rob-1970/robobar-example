@@ -35,7 +35,7 @@ pipeline {
         stage('Security') {
             steps {
                 echo 'SECURITY #1 . . . . . . . . .'
-                sh 'trivy fs --format json --output trivy-results.json .'
+                sh '/usr/local/bin/trivy fs --format json --output trivy-results.json .'
 
             }
             post {
@@ -44,7 +44,6 @@ pipeline {
                 }
             }
         }
-
 
     }
 }
