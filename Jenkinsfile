@@ -21,7 +21,7 @@ pipeline {
 
         // per a saltar aquest pas al posar-ho a FALSE
         stage('Test') {
-            when { expression { false} }
+            //when { expression { false} }
                 steps {
                 echo 'TEST step #1 . . . . . . . . .'
                 nodejs('node-14.18.2'){
